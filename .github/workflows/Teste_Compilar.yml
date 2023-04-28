@@ -21,6 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+        
     - name: Compilar o Java 
       run: | 
-            cd src javac -cp . Teste.java
+             cd src && javac -cp . Teste.java
