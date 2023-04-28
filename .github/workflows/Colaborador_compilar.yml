@@ -24,4 +24,4 @@ jobs:
         
     - name: Compilar o Java 
       run: |
-            cd src javac -cp . Main.jav
+            cd src && javac -cp . Main.jav
