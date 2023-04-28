@@ -29,8 +29,8 @@ jobs:
     - name: Compilar o Teste
       run: | 
              cd src && javac -cp . Teste.java
-            
-     - name: Compilar o Teste
+      
+    - name: Compilar o Teste
       run: | 
              cd src
              java Teste
