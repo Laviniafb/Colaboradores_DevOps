@@ -1,6 +1,3 @@
-import javax.print.DocFlavor;
-import java.util.Date;
-
 public class Colaborador {
     private String nome;
     private String CPF;
