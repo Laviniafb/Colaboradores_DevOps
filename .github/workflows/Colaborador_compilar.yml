@@ -38,8 +38,8 @@ jobs:
       with:
         image: lavinia090/aula_deploy
         tags: 1.0, 1.1
-        registry: Docker.io
-        dockerfile: Dockerfile.ci
+        registry: docker.io
+        dockerfile: dockerfile
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
