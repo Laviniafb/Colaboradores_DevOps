@@ -34,3 +34,16 @@ jobs:
       run: | 
              cd src
              java Teste
+             
+    - uses: actions/checkout@v3
+    - name: Check out code
+             
+    - uses: mr-smithers-excellent/docker-build-push@v6
+    - name: Build & push Docker image
+      with:
+        image: lavinia090/aula_deploy
+        tags: 1.0, 1.1
+        registry: Docker.io
+        dockerfile: Dockerfile.ci
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
