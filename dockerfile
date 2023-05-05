@@ -1,4 +1,4 @@
-FROM openJDK
+FROM openjdk
 WORKDIR src
 ADD src/. .
 
